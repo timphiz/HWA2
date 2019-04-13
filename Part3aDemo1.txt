@@ -1,0 +1,16 @@
+Script started on Sat 13 Apr 2019 12:56:32 PM CDT
+]0;tphilli@js-104-73:~[?1034h[js-104-73] tphilli ~-->gcc -z execstack -fno-stack-protector -o BufferRedirect6 4 BufferRedirect64.c
+[01m[KBufferRedirect64.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[KBufferRedirect64.c:41:3:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kposix_memalign[m[K’ from incompatible pointer type [enabled by default]
+   posix_memalign(&buf, pagesize, strlen(shellcode)+10);
+[01;32m[K   ^[m[K
+In file included from [01m[KBufferRedirect64.c:3:0[m[K:
+[01m[K/usr/include/stdlib.h:502:12:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid **[m[K’ but argument is of type ‘[01m[Kchar **[m[K’
+ extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+[01;32m[K            ^[m[K
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./BufferRedirect64
+Segmentation fault
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->exit
+exit
+
+Script done on Sat 13 Apr 2019 12:57:39 PM CDT

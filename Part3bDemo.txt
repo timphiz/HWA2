@@ -1,0 +1,67 @@
+Script started on Sat 13 Apr 2019 02:34:53 PM CDT
+]0;tphilli@js-104-73:~[?1034h[js-104-73] tphilli ~-->script Part3aDemo2.txt1.txt[4P./BufferRedirect64script Part3aDemo1.txt2.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgcc[K[K[Kecho 0 | sudo tee /proc/sys/kernel/randomize_va_space
+0
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->gcc -o part3b part3b.c
+[01m[Kpart3b.c:[m[K In function ‘[01m[Kdumb[m[K’:
+[01m[Kpart3b.c:32:11:[m[K [01;35m[Kwarning: [m[Kassignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+[01;32m[K           ^[m[K
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./part3b
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffadf8
+Value of filename[0]:7fffffffa9f0
+The attack buffer is going to need to be a little bit bigger than:2b50
+Segmentation fault
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./part3bgcc -o part3b part3b.c[C[1@ [1@-[1@f[1@n[1@o[1@-[1@s[1@t[1@a[1@c[1@k[1@-[1@p[1@r[1@o[1@t[1@e[1@c[1@t[1@o[1@r
+[01m[Kpart3b.c:[m[K In function ‘[01m[Kdumb[m[K’:
+[01m[Kpart3b.c:32:11:[m[K [01;35m[Kwarning: [m[Kassignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+[01;32m[K           ^[m[K
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->gcc -fno-stack-protector -o part3b part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./part3b[K
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffadf8
+Value of filename[0]:7fffffffa9f0
+The attack buffer is going to need to be a little bit bigger than:2b50
+Segmentation fault
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./part3bgcc -fno-stack-protector -o part3b part3b.c[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@z[C[1@ [1@e[1@x[1@e[1@c[1@s[1@t[1@a[1@c[1@k
+[01m[Kpart3b.c:[m[K In function ‘[01m[Kdumb[m[K’:
+[01m[Kpart3b.c:32:11:[m[K [01;35m[Kwarning: [m[Kassignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+[01;32m[K           ^[m[K
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->gcc -z execstack -o part3b part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./part3b[K
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffadf8
+Value of filename[0]:7fffffffa9f0
+The attack buffer is going to need to be a little bit bigger than:2b50
+Segmentation fault
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./part3bgcc -z execstack -o part3b part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@f[1@n[1@o[1@-[1@s[1@t[1@a[1@c[1@k[1@-[1@p[1@r[1@o[1@t[1@e[1@c[1@t[1@o[1@r
+[01m[Kpart3b.c:[m[K In function ‘[01m[Kdumb[m[K’:
+[01m[Kpart3b.c:32:11:[m[K [01;35m[Kwarning: [m[Kassignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+[01;32m[K           ^[m[K
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->gcc -z execstack -fno-stack-protector -o part3b part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./part3b[K
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffadf8
+Value of filename[0]:7fffffffa9f0
+The attack buffer is going to need to be a little bit bigger than:2b50
+Segmentation fault
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->exit
+exit
+
+Script done on Sat 13 Apr 2019 02:39:21 PM CDT

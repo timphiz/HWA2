@@ -1,0 +1,5 @@
+A tutorial on 0x00sec.org was very helpful for creating my shellcode. I'm not much a Linux hand so having someone tell me to pass /bin/sh to syscall 11 was useful.
+
+For explanations of how programs like execstack worked I basically just used whatever the first few search engine results were, stack overflow threads and the like.
+
+I wasn't able to get the C programs working correctly, unfortunately, but I think I had a good ahndle on the other aspects of the assignment.

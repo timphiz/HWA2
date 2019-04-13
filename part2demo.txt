@@ -1,0 +1,29 @@
+Script started on Sat 13 Apr 2019 12:47:47 PM CDT
+]0;tphilli@js-104-73:~[?1034h[js-104-73] tphilli ~-->exit./part2ld -m elf_i386 part2.o -o part2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pas -32 part2.s -o part2.o
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->as -32 part2.s -o part2.oexit[K./part2ld -m elf_i386 part2.o -o part2
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->ld -m elf_i386 part2.o -o part2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pas -32 part2.s -o part2.oexit[K./part2
+[js-104-73] tphilli /home/tphilli-->exit./part2exit   ./part2exit   
+exit
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./part2ld -m elf_i386 part2.o -o part2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pas -32 part2.s -o part2.oexit[K./part2ld -m elf_i386 part2.o -o part2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pas -32 part2.s -o part2.oexit[Kx/[30]x 08048054objdump -d part2
+
+part2:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+08048054 <_start>:
+ 8048054:	31 c0                	xor    %eax,%eax
+ 8048056:	50                   	push   %eax
+ 8048057:	68 6e 2f 73 68       	push   $0x68732f6e
+ 804805c:	68 2f 2f 62 69       	push   $0x69622f2f
+ 8048061:	89 e3                	mov    %esp,%ebx
+ 8048063:	31 c9                	xor    %ecx,%ecx
+ 8048065:	b0 0b                	mov    $0xb,%al
+ 8048067:	cd 80                	int    $0x80
+ 8048069:	b0 01                	mov    $0x1,%al
+ 804806b:	31 db                	xor    %ebx,%ebx
+ 804806d:	cd 80                	int    $0x80
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->objdump -d part2[9P./part2ld -m elf_i386 part2.o -o part2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pas -32 part2.s -o part2.oexit[K./part2[3Pexit
+exit
+
+Script done on Sat 13 Apr 2019 12:48:15 PM CDT

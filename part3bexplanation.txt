@@ -1,0 +1,19 @@
+I was unable to get this program to run correctly, but based on my understanding here's how it should work:
+
+1. No compile time options
+
+By default gcc is set to have "fstack-protector" enabled. This inserts code into your program that detects any stack overflow and, upon detection, generates an error that terminates the program. Since our program here works via stack overflow this compiler option will prevent it from executing.
+
+Additionally, Linux by default disables instructions from executing from the stack. The execstack program bypasses this and allows a program to execute from the stack. Having the compiler link our program to execstack has our program run execstack, allowing execution from the stack.
+
+2. Stack protection turned off
+
+fstack-protector no longer prevents us from putting our code onto the stack via an overflow, but without execstack we're unable to execute code from the stack so the program fails.
+
+3. Executable stack turned on
+
+fstack-protector catches the stack overflow and causes the program to fail before we're able to attempt to execute our code.
+
+4. Stack protection turned off and executable stack turned on
+
+fstack-protector is off so we're able to use an overflow to put our code on the stack. Execstack then allows us to execute our code from the stack. The program succeeds.
